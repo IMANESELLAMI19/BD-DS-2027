@@ -1,0 +1,391 @@
+\documentclass[a4paper,11pt]{article}
+
+% =========================
+% PACKAGES
+% =========================
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+
+% =========================
+% COLORS
+% =========================
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% =========================
+% PAGE LAYOUT
+% =========================
+\geometry{
+    left=1.4cm,
+    top=0.8cm,
+    right=1.2cm,
+    bottom=1cm
+}
+
+\setlength{\footskip}{5pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% =========================
+% TEXT SETTINGS
+% =========================
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% =========================
+% SECTION FORMAT
+% =========================
+\titleformat{\section}{
+    \vspace{-4pt}
+    \scshape
+    \raggedright
+    \large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% =========================
+% CUSTOM COMMANDS
+% =========================
+
+\newcommand{\resumeItem}[2]{
+    \item{
+        \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{0.5mm}
+    \item
+    \begin{tabular*}{0.98\textwidth}[t]{
+        l@{\extracolsep{\fill}}r
+    }
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} & \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+    \vspace{0.5mm}
+    \item
+    \begin{tabular*}{0.98\textwidth}[t]{
+        l@{\extracolsep{\fill}}r
+    }
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{
+    \resumeItem{#1}{#2}\vspace{-4pt}
+}
+
+\renewcommand{\labelitemi}{
+    $\vcenter{\hbox{\tiny$\bullet$}}$
+}
+
+\renewcommand{\labelitemii}{
+    $\vcenter{\hbox{\tiny$\circ$}}$
+}
+
+\newcommand{\resumeSubHeadingListStart}{
+    \begin{itemize}[
+        leftmargin=*,
+        labelsep=1mm
+    ]
+}
+
+\newcommand{\resumeHeadingSkillStart}{
+    \begin{itemize}[
+        leftmargin=*,
+        itemsep=1.7mm,
+        rightmargin=2ex
+    ]
+}
+
+\newcommand{\resumeItemListStart}{
+    \begin{itemize}[
+        leftmargin=*,
+        labelsep=1mm,
+        itemsep=0.5mm
+    ]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+    \end{itemize}\vspace{2mm}
+}
+
+\newcommand{\resumeHeadingSkillEnd}{
+    \end{itemize}\vspace{-2mm}
+}
+
+\newcommand{\resumeItemListEnd}{
+    \end{itemize}\vspace{-2mm}
+}
+
+% =========================
+% DOCUMENT
+% =========================
+
+\begin{document}
+
+\fontfamily{qhv}\selectfont
+
+% =========================
+% HEADER
+% =========================
+
+\begin{center}
+    {\Huge\textbf{IMANE SELLAMI}}
+\end{center}
+
+\vspace{-5mm}
+
+\begin{center}
+    \small{
+    Settat, Maroc
+    \;|\;
+    +212 6 42 88 73 92
+    \;|\;
+    \href{mailto:Imanesellami2005@gmail.com}
+    {Imanesellami2005@gmail.com}
+    }
+\end{center}
+
+\vspace{-4mm}
+
+
+% =========================
+% PROFIL
+% =========================
+
+\section{\textbf{Profil}}
+
+\vspace{1mm}
+
+\small{
+Étudiante en 4\textsuperscript{e} année Gestion à l'ENCG Settat, filière Finance,
+je m'intéresse à la finance d'entreprise, à l'analyse financière et à l'utilisation
+des données pour appuyer la prise de décision. Mes expériences académiques et
+professionnelles m'ont permis de développer ma rigueur, mon autonomie, mon sens
+de l'analyse et ma capacité à travailler en équipe.
+}
+
+\vspace{-2mm}
+
+
+% =========================
+% EXPÉRIENCE PROFESSIONNELLE
+% =========================
+
+\section{\textbf{Expérience professionnelle}}
+
+\vspace{-0.4mm}
+
+\resumeSubHeadingListStart
+
+% =========================
+% CEEC
+% =========================
+
+\resumeSubheading
+{Cabinet Espace Expertise Comptable (CEEC)}
+{Témara, Maroc}
+{Stagiaire -- Stage d'initiation}
+{01/06/2026 -- 28/07/2026}
+
+\resumeItemListStart
+
+\item Participation aux travaux du service comptabilité : classement et saisie des pièces comptables, suivi des dossiers clients et préparation des déclarations TVA et CNSS.
+
+\item Réalisation de travaux au sein du service d'expertise juridique, notamment l'étude de dossiers transmis par le tribunal et l'analyse des pièces produites par les parties.
+
+\item Participation à la préparation de rapports d'expertise en respectant les éléments communiqués, les exigences d'objectivité et les questions posées par le tribunal.
+
+\resumeItemListEnd
+
+
+% =========================
+% MINISTÈRE
+% =========================
+
+\resumeSubheading
+{Ministère de l'Économie et des Finances}
+{Rabat, Maroc}
+{Stagiaire -- Stage de découverte}
+{23/06/2025 -- 23/07/2025}
+
+\resumeItemListStart
+
+\item Observation du fonctionnement des services administratifs et financiers dans un contexte institutionnel.
+
+\item Découverte des missions liées à la planification financière et aux prévisions économiques.
+
+\item Participation à des échanges avec des cadres du ministère afin de mieux comprendre les politiques économiques nationales.
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-5mm}
+
+
+% =========================
+% FORMATION
+% =========================
+
+\section{\textbf{Formation}}
+
+\vspace{-0.4mm}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{ENCG -- Settat}
+{Settat, Maroc}
+{Programme en Gestion -- 4\textsuperscript{e} année, Filière Finance}
+{2025 -- Présent}
+
+\resumeSubheading
+{Lycée Omar Al-Khayyam}
+{Rabat, Maroc}
+{Classes préparatoires aux grandes écoles -- Filière ECS}
+{2023 -- 2025}
+
+\resumeSubheading
+{Lycée Abdellah Chafchaouni}
+{Témara, Maroc}
+{Baccalauréat en Sciences Mathématiques B -- Mention Bien}
+{2023}
+
+\resumeSubHeadingListEnd
+
+\vspace{-5mm}
+
+
+% =========================
+% COMPÉTENCES
+% =========================
+
+\section{\textbf{Compétences}}
+
+\vspace{-0.4mm}
+
+\resumeHeadingSkillStart
+
+\resumeSubItem{Analyse de données :}
+{Analyse statistique, ACP, Analyse des Correspondances, SPSS, bases de données, Data Science}
+
+\resumeSubItem{Bureautique :}
+{Microsoft Word, Excel, PowerPoint, Canva}
+
+\resumeSubItem{Programmation :}
+{Python -- notions, VBA -- notions}
+
+\resumeSubItem{Compétences personnelles :}
+{Rigueur, organisation, autonomie, travail d'équipe, gestion du stress, capacité d'adaptation}
+
+\resumeHeadingSkillEnd
+
+\vspace{-3mm}
+
+
+% =========================
+% ENGAGEMENT ASSOCIATIF
+% =========================
+
+\section{\textbf{Engagement associatif}}
+
+\vspace{-0.4mm}
+
+\resumeSubHeadingListStart
+
+\resumeProject
+{AIESEC in Settat -- OGT}
+{Membre}
+{2025 -- 2026}
+{}
+
+\resumeItemListStart
+
+\item Accompagnement des étudiants dans leur recherche de stages à l'étranger.
+
+\item Contribution aux projets internationaux du comité OGT.
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-5mm}
+
+
+% =========================
+% CERTIFICATIONS
+% =========================
+
+\section{\textbf{Certifications}}
+
+\vspace{-0.2mm}
+
+\resumeSubHeadingListStart
+
+\resumeProject
+{Green Digital Certificate}
+{INCO Learning -- Formation en ligne}
+{2026}
+{}
+
+\resumeItemListStart
+
+\item Formation sur les pratiques numériques écoresponsables.
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-5mm}
+
+
+% =========================
+% LANGUES
+% =========================
+
+\section{\textbf{Langues}}
+
+\vspace{-0.4mm}
+
+\small{
+
+\textbf{Arabe :} Langue maternelle
+\quad|\quad
+\textbf{Français :} Courant
+\quad|\quad
+\textbf{Anglais :} Intermédiaire
+
+\vspace{1mm}
+
+\textbf{Turc :} Intermédiaire
+\quad|\quad
+\textbf{Espagnol :} Notions de base
+
+}
+
+\vspace{-3mm}
+
+\end{document}
